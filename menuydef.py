@@ -22,17 +22,19 @@ def dividir(a,b):
 while True:
     try:
         print("1. Suma")
+        
         print("2. Resta")
         print("3. Multipicacion")
         print("4. Divicion")
         print("5. Salir")
+        print("6. hola.")
         op=int(input("Ingresa una opcion: "))
         time.sleep(2)
         os.system(cls)
     except ValueError:
         print("Ingrese Solo numeros de 1 al 5")
         break 
-    if op > 5:
+    if op > 6:
         print("Opcion fuera de rango usa numeros solo del 1 al 5")
         continue
     if op == 1:
@@ -70,6 +72,8 @@ while True:
     if op== 5:
         print("Saliendo del programa")
         break
+    if op == 6:
+        print("hola")
     
 
             
